@@ -1,0 +1,107 @@
+.full {
+  margin-top: 25px;
+}
+.all {
+  display: grid;
+  grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l";
+  grid-template-rows: 1fr 1fr 
+  1fr; /* Set heights for each row */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Use fraction units for equal width */
+  align-items: center;  /* Center items vertically */
+  justify-items: center; /* Center items horizontally */
+  grid-gap: 4px;
+  columm-gap: 2px;
+  /* Center the grid within its container */
+  width: 300px; /* Set a width for the grid container */
+  margin: 0 auto; /* Center the grid in the parent */
+/* Optional: Add border for visualization */
+ border: none;
+  
+}
+
+input[type="number"] {
+  width: 100%; /* Make inputs take full width of their grid cell */
+/* Include padding and border in the element's total width */
+}
+
+#all > div {
+  /* Add styles to ensure contents do not overflow */
+  overflow: hidden; /* Prevents overflow */
+  text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#a { grid-area: a; color: #39A9AC; border: solid 2px #39A9AC;}
+#b { grid-area: b; color: #39A9AC; border: solid 2px #39A9AC; }
+#c { grid-area: c; color: #39A9AC; border: solid 2px #39A9AC; }
+#d { grid-area: d; color: #39A9AC;border: solid 2px #39A9AC; }
+#e { grid-area: e; color: #39A9AC; border: solid 2px #39A9AC;}
+#f { grid-area: f; color: #39A9AC; border: solid 2px #39A9AC;}
+#g { grid-area: g; color: #39A9AC; border: solid 2px #39A9AC;}
+#h { grid-area: h; color: #39A9AC; border: solid 2px #39A9AC;}
+#i { grid-area: i; color: #39A9AC; border: solid 2px #39A9AC;}
+#j { grid-area: j; color: #39A9AC; border: solid 2px #39A9AC;}
+#k { grid-area: k; color: #39A9AC; border: solid 2px #39A9AC;}
+#l { grid-area: l; color: #39A9AC; border: solid 2px #39A9AC;}
+input {
+  width: 100px;
+}
+.flex {
+  display: flex;
+}
+.selectt {
+  border: 2px solid red;
+  background-color: red;
+  margin-left: 3pxpx;
+  margin-top: 8px;
+  color: white;
+  font-family: Monospace;
+  
+}
+.second {
+  border: solid 2px red;
+  background-color: red;
+  margin-top: 8px;
+  color: white;
+  font-family: Monospace;
+  
+}
+.operation {
+  border: solid 2px red;
+  background-color: white;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 8px;
+  font-family: Monospace;
+}
+body {
+  font-family: Monospace;
+}
+button {
+  background-color: #01BFFD;
+  border: none;
+  color: white;
+  font-family: Monospace;
+  margin-left: 60px;
+  margin-top: 3px;
+}
+p {
+  margin-left: 100px;
+  width: 150px;
+  height: 30px;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+}
+#multi {
+  width: 20px;
+  
+}
+#mute {
+  width: 20px;
+  margin-left: 30px;
+}
